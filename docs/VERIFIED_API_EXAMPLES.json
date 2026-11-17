@@ -1,0 +1,67 @@
+{
+  "training": {
+    "message": "Модель навчена, збережена; результати навчання та оцінювання записані в SQLite.",
+    "run_id": "20261104T142723_5dc1d3ad69",
+    "model": "Logistic Regression",
+    "parameters": {
+      "C": 0.1,
+      "class_weight": null,
+      "max_iter": 1000,
+      "random_state": 42
+    },
+    "total_records": 50000,
+    "train_records": 45000,
+    "holdout_records": 5000,
+    "metrics_holdout": {
+      "accuracy": 0.542,
+      "f1_macro": 0.5415733365104364,
+      "recall_high": 0.4675740592473979,
+      "precision_high": 0.6735870818915801
+    },
+    "model_file": "models/burnout_logistic_regression.joblib",
+    "train_predictions_saved": 45000,
+    "holdout_evaluations_saved": 5000
+  },
+  "example_predict_request": {
+    "features": {
+      "major_category": "Humanities",
+      "year_of_study": "Senior",
+      "pre_semester_gpa": 2.418,
+      "weekly_genai_hours": 23.31,
+      "primary_use_case": "Copywriting/Drafting",
+      "prompt_engineering_skill": "Beginner",
+      "tool_diversity": 1,
+      "paid_subscription": true,
+      "traditional_study_hours": 8.13,
+      "perceived_ai_dependency": 5,
+      "institutional_policy": "Allowed_With_Citation",
+      "anxiety_level_during_exams": 6
+    }
+  },
+  "prediction_by_id": {
+    "prediction_id": 45001,
+    "run_id": "20261104T142723_5dc1d3ad69",
+    "source": "inference",
+    "student_id": 100001,
+    "prediction": "High",
+    "probabilities": {
+      "Low": 0.019181052964377797,
+      "Medium": 0.22789359205920984,
+      "High": 0.7529253549764124
+    },
+    "message": "Прогноз та вхідні характеристики збережено в SQLite"
+  },
+  "prediction_by_features": {
+    "prediction_id": 45002,
+    "run_id": "20261104T142723_5dc1d3ad69",
+    "source": "inference",
+    "student_id": null,
+    "prediction": "High",
+    "probabilities": {
+      "Low": 0.019181052964377797,
+      "Medium": 0.22789359205920984,
+      "High": 0.7529253549764124
+    },
+    "message": "Прогноз та вхідні характеристики збережено в SQLite"
+  }
+}

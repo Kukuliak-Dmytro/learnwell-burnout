@@ -1,0 +1,38 @@
+{
+  "run_id": "20261017T184037197344Z",
+  "model": "Logistic Regression",
+  "features": [
+    "major_category",
+    "year_of_study",
+    "pre_semester_gpa",
+    "weekly_genai_hours",
+    "primary_use_case",
+    "prompt_engineering_skill",
+    "tool_diversity",
+    "paid_subscription",
+    "traditional_study_hours",
+    "perceived_ai_dependency",
+    "institutional_policy",
+    "anxiety_level_during_exams"
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "best_params": {
+    "clf__class_weight": null,
+    "clf__C": 0.1
+  },
+  "cv_macro_f1": 0.5388959382768227,
+  "train": {
+    "accuracy": 0.5397866666666666,
+    "f1_macro": 0.5409784091630386,
+    "recall_high": 0.47293112653497066
+  },
+  "test": {
+    "accuracy": 0.5344,
+    "f1_macro": 0.5344965078343713,
+    "recall_high": 0.46316463805253044
+  }
+}
