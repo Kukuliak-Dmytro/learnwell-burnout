@@ -1,0 +1,15 @@
+services:
+  learnwell-burnout:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: learnwell-burnout
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+      - "8002:8002"
+    volumes:
+      - learnwell_data:/data
+
+volumes:
+  learnwell_data:
